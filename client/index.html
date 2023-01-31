@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" id="html-tag">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="top-navbar"></div>
+    <button id="swap" type="button">click me!</button>
+    <me-container root="./html/top-navbar/logged-in.html"></me-container>
+    <me-if if="st('state')">
+      <div>state is true</div>
+    </me-if>
+    <me-if if="!st('state')">
+      <div>state is false</div>
+    </me-if>
+    <!-- <me-for for="st('arr')">
+      <me-if if="{{val}} % 2 === 0">{{val}}</me-if>
+    </me-for> -->
+
+    <script type="module" src="js/common/tests.js"></script>
+    <script type="module" src="js/html-tags/html-tags.js"></script>
+  </body>
+</html>

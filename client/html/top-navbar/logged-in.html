@@ -1,0 +1,11 @@
+<me-if if="st('isLoggedIn')">
+  <h1>Hello</h1>
+  <me-event event="on-time">
+    <ol>
+      <me-for for="{{data}}">
+        <li>{{val}}</li>
+        </me-for>
+    </ol>
+  </me-event>
+</me-if>
+<me-if if="!st('isLoggedIn')"><h1>Log in please</h1></me-if>
