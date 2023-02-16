@@ -1,0 +1,88 @@
+Date : 2023-02-16 13:55:55
+Directory : /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3
+Total : 41 files,  829 codes, 50 comments, 152 blanks, all 1031 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |         37 |        771 |         47 |        147 |        965 |
+| HTML       |          3 |         34 |          3 |          4 |         41 |
+| JSON       |          1 |         24 |          0 |          1 |         25 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                        | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                           |         41 |        829 |         50 |        152 |      1,031 |
+| client                                                                                                      |         20 |        411 |         33 |         63 |        507 |
+| client (Files)                                                                                              |          1 |         22 |          3 |          2 |         27 |
+| client/html                                                                                                 |          2 |         12 |          0 |          2 |         14 |
+| client/html/top-navbar                                                                                      |          2 |         12 |          0 |          2 |         14 |
+| client/js                                                                                                   |         16 |        353 |         30 |         58 |        441 |
+| client/js/common                                                                                            |          3 |         67 |          9 |         12 |         88 |
+| client/js/html-tags                                                                                         |         13 |        286 |         21 |         46 |        353 |
+| client/js/html-tags (Files)                                                                                 |          2 |         26 |          0 |          3 |         29 |
+| client/js/html-tags/async                                                                                   |          3 |         89 |         17 |          9 |        115 |
+| client/js/html-tags/logic                                                                                   |          5 |        117 |          2 |         22 |        141 |
+| client/js/html-tags/router                                                                                  |          3 |         54 |          2 |         12 |         68 |
+| client/json                                                                                                 |          1 |         24 |          0 |          1 |         25 |
+| data-manager                                                                                                |          5 |         34 |          0 |         10 |         44 |
+| data-manager (Files)                                                                                        |          2 |          7 |          0 |          2 |          9 |
+| data-manager/data-actions                                                                                   |          1 |          6 |          0 |          4 |         10 |
+| data-manager/data-objects                                                                                   |          2 |         21 |          0 |          4 |         25 |
+| fnetwork                                                                                                    |         10 |        250 |         16 |         37 |        303 |
+| fnetwork (Files)                                                                                            |          7 |        112 |         11 |         27 |        150 |
+| fnetwork/packets-schemas                                                                                    |          3 |        138 |          5 |         10 |        153 |
+| fserverFramework                                                                                            |          3 |        118 |          1 |         34 |        153 |
+| server                                                                                                      |          3 |         16 |          0 |          8 |         24 |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                    | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/html/top-navbar/logged-in.html           | HTML       |         11 |          0 |          1 |         12 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/html/top-navbar/not-logged-in.html       | HTML       |          1 |          0 |          1 |          2 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/index.html                               | HTML       |         22 |          3 |          2 |         27 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/common/common.js                      | JavaScript |         46 |          5 |          8 |         59 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/common/fajax.js                       | JavaScript |          7 |          0 |          1 |          8 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/common/tests.js                       | JavaScript |         14 |          4 |          3 |         21 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/async/async.js              | JavaScript |          7 |          0 |          1 |          8 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/async/me-event.js           | JavaScript |         24 |          2 |          1 |         27 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/async/me-url.js             | JavaScript |         58 |         15 |          7 |         80 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/html-tags.js                | JavaScript |          6 |          0 |          1 |          7 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/logic/logic.js              | JavaScript |          7 |          0 |          2 |          9 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/logic/logicParam.js         | JavaScript |         12 |          0 |          2 |         14 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/logic/logicalState.js       | JavaScript |         24 |          1 |          8 |         33 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/logic/me-for.js             | JavaScript |         48 |          1 |          7 |         56 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/logic/me-if.js              | JavaScript |         26 |          0 |          3 |         29 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/router/Container.js         | JavaScript |         15 |          0 |          4 |         19 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/router/Redirect.js          | JavaScript |         32 |          1 |          6 |         39 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/router/router.js            | JavaScript |          7 |          1 |          2 |         10 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/js/html-tags/tag-names.js                | JavaScript |         20 |          0 |          2 |         22 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/client/json/test.json                           | JSON       |         24 |          0 |          1 |         25 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/data-manager/data-actions/coreActions.js        | JavaScript |          6 |          0 |          4 |         10 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/data-manager/data-objects/DataObject.js         | JavaScript |         18 |          0 |          2 |         20 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/data-manager/data-objects/User.js               | JavaScript |          3 |          0 |          2 |          5 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/data-manager/dbConfig.js                        | JavaScript |          7 |          0 |          1 |          8 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/data-manager/uuid.js                            | JavaScript |          0 |          0 |          1 |          1 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/FDHCP.js                               | JavaScript |         24 |          5 |          6 |         35 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/FDNS.js                                | JavaScript |         32 |          0 |          6 |         38 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/FHTTP.js                               | JavaScript |          2 |          0 |          2 |          4 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/FHTTPTarget.js                         | JavaScript |         32 |          0 |          6 |         38 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/FIP.js                                 | JavaScript |         13 |          5 |          4 |         22 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/FPORT.js                               | JavaScript |          6 |          1 |          1 |          8 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/packets-schemas/FDNSPacket.js          | JavaScript |          7 |          5 |          1 |         13 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/packets-schemas/FHTTPRequestPacket.js  | JavaScript |         64 |          0 |          5 |         69 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/packets-schemas/FHTTPResponsePacket.js | JavaScript |         67 |          0 |          4 |         71 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fnetwork/sender.js                              | JavaScript |          3 |          0 |          2 |          5 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fserverFramework/fakeHttp.js                    | JavaScript |         35 |          0 |         17 |         52 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fserverFramework/request.js                     | JavaScript |         42 |          1 |          6 |         49 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/fserverFramework/response.js                    | JavaScript |         41 |          0 |         11 |         52 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/server/fhttp.js                                 | JavaScript |         11 |          0 |          3 |         14 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/server/networker.js                             | JavaScript |          1 |          0 |          2 |          3 |
+| /media/yossi/Windows/Develop/Lev/FullStack/Part3/FullStack3/server/server.js                                | JavaScript |          4 |          0 |          3 |          7 |
+| Total                                                                                                       |            |        829 |         50 |        152 |      1,031 |
++-------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

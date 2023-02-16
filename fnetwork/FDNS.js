@@ -1,12 +1,21 @@
-const notFoundRedirect = "www.url.not.found.fcom";
-
-const fdns = {
-  "www.url.not.found.fcom": {
-    executor: (path, params, options) => {
-      return "404 cant find url";
-    },
-  },
+const FURLS = {
+  
 };
+
+export function registerFURL(furl, fip) {
+  FURLS[furl] = fip;
+}
+
+export function FDNSRequest(url, options) {
+  return new Promise((res, rej) => {
+    if (FURLS[url]) {
+      res(FURLS[url]);
+    } else {
+      rej("DNS Error");
+    }
+  });
+}
+
 
 export function frequest(url, options) {
   if (fdns[url.split("/")]) {
