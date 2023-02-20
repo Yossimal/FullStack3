@@ -1,5 +1,8 @@
 import { checkIpv4 } from "../fnetwork/FIP.js";
 import { HTTPMethods } from "../fnetwork/packets-schemas/FHTTPRequestPacket.js";
+import { fhttp } from "../fnetwork/FHTTP.js";
+import { Response } from "./response.js";
+import  Request  from "./request.js";
 
 class fakeHttpObj {
   methods = {
@@ -12,20 +15,51 @@ class fakeHttpObj {
 
   constructor(ip) {
     this.ip = ip;
-    this.litseners = [];
+    // this.fhttp = fhttp().setHandler(this.litsener);
+    // this.fhttp.ip = this.ip
+  }
+
+  /**
+   * sets the fake protocol for the framework
+   * @param {FakeHTTPProtocol} protocol the objet of the fake protocol
+   * @returns this (for chaining)
+   */
+  http = (protocol) => {
+    this.fhttp = protocol;
+    this.fhttp.setHandler(this.litsener)
   }
 
   litsen = (port) => {
-    const eventName = `litsener-${this.ip}:${port}`;
-    this.litseners.push(eventName);
-    addEventListener(eventName, this.route);
+    this.port = port;
+  };
+
+  litsener = (packet) => {
+    if(!this.port) return;
+    if(packet.destFIP !== this.ip) return;
+    if(packet.destFPort !== this.port) return;
+    return this.route(packet);
   };
 
   terminate = () => {
-    this.litseners.forEach((l) => removeEventListener(l));
+    this.litseners = [];
   };
 
-  route = (packet) => {};
+  route = (packet) => {
+    const request = new Request(packet,this.fhttp.url,this);
+    const method = this.methods[request.method.toLowerCase()];
+    const target = request.target;
+    const targetFunc = method.targets.find((t) => t.url === target);
+    if (targetFunc) {
+      const resopnse = new Response(request);
+      let results;
+      resopnse.sender = (packet) => results = packet;
+      targetFunc.func(request, resopnse);
+      return results;
+    }else{
+      return new Response(request).status(404).end();
+    }
+    
+  };
 
   json = () => this.parser = JSON.parse;
 
@@ -47,5 +81,8 @@ class fakeHttpObj {
 
 export default function fakeHttp(ip) {
   if (!checkIpv4(ip)) return null;
+
   return new fakeHttpObj(ip);
 }
+
+

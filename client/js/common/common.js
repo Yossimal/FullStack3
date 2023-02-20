@@ -1,4 +1,4 @@
-import { ffetch } from "./fajax";
+import { ffetch } from "../../../fajax/ffetch.js";
 
 export default class $ {
   static id(idString) {

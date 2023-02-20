@@ -1,6 +1,6 @@
-import { checkIpv4 } from "./FIP.js";
+import { checkIpv4 } from "../FIP.js";
 import { checkPort } from "../FPORT.js";
-import { checkTarget } from "../FHTTPPacket.js";
+import { checkTarget } from "../FHTTPTarget.js";
 
 export const HTTPMethods = {
   POST: "POST",
@@ -18,7 +18,7 @@ export class FHTTPRequestPacket {
   headers;
   body;
   srcPort;
-  dstPort;
+  destFPort;
   version;
   constructor(
     srcFIP = "",
@@ -39,7 +39,7 @@ export class FHTTPRequestPacket {
     this.headers = headers;
     this.body = body;
     this.srcPort = srcPort;
-    this.dstPort = dstPort;
+    this.destFPort = dstPort;
     this.version = version;
   }
 
@@ -47,7 +47,7 @@ export class FHTTPRequestPacket {
     if (!checkIpv4(this.srcFIP)) return false;
     if (!checkIpv4(this.destFIP)) return false;
     if (!checkPort(this.srcPort)) return false;
-    if (!checkPort(this.dstPort)) return false;
+    if (!checkPort(this.destFPort)) return false;
     if (!HTTPMethods[this.method]) return false;
     if (this.headers["Content-Length"]) {
       if (this.body.length !== parseInt(this.headers["Content-Length"]))

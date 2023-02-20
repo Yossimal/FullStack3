@@ -12,12 +12,11 @@ function randmIPv4() {
   return ip;
 }
 
-export function forwardToFIP(data, fip) {
-  //return a promise that checks if the FIP exists, if it does, it resolves with the result of the FIP,
-  //if it doesn't, it rejects with an error
+export function forwardToFIP(data) {
+  const fip = data.destFIP;
   return new Promise((res, rej) => {
-    if (!FIPs[fip]) rej("FIP not found");
-    res(FIPs[fip](data));
+    if (!FIPs.get(fip)) rej("FIP not found");
+    res(FIPs.get(fip)(data));
   });
 }
 
@@ -27,6 +26,7 @@ export function registerFIP(sendFunction, preferedFIP) {
     preferedFIP = randmIPv4();
   }
   FIPs.set(preferedFIP, sendFunction);
+  return preferedFIP;
 }
 
 export function unregisterFIP(fip) {

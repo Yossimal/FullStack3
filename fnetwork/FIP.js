@@ -9,7 +9,7 @@
 export function checkIpv4(ipAddress){
     if(ipAddress.split(".").length !== 4) return false;
     const ipParts = ipAddress.split(".");
-    for(part of ipParts){
+    for(const part of ipParts){
       if(isNaN(part)) return false;
       if(part.length > 3) return false;
       if(part.length < 1) return false;

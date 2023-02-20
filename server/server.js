@@ -1,7 +1,13 @@
-import { fhttp } from "./fhttp";
+import { fnet } from "../fserverFramework/fnet.js";
 
-export const app = fhttp();
+const app = fnet('my.awsome.site.com');
+app.text();
 
-app.get("/test", (req, res) => {
 
+app.get("/", (req, res) => {
+  res.send('{"data":"Hello World!"}');
 });
+
+
+
+app.litsen(80);

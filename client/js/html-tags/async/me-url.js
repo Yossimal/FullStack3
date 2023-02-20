@@ -3,15 +3,25 @@ import $ from "../../common/common.js";
 export class UrlLoad extends HTMLElement {
   url = this.getAttribute("url");
 
-  get fajax(){
-    return this.getAttribute('fajax') !=null && this.getAttribute('fajax').toLowerCase() === 'true'
+  /**
+   * are we using fajax protocol
+   */
+  get fajax() {
+    return (
+      this.getAttribute("fajax") != null &&
+      this.getAttribute("fajax").toLowerCase() === "true"
+    );
   }
 
+  /**
+   * the type of the response
+   */
   get type() {
     return this.getAttribute("type") == null
       ? "json"
       : this.getAttribute("type").toLowerCase();
   }
+
   get bslash() {
     return (
       this.getAttribute("bslash") == null ||
@@ -28,7 +38,8 @@ export class UrlLoad extends HTMLElement {
   }
 
   load = async () => {
-    const data = await $.get(this.url);
+    const getter = this.fajax ? $.fget : $.get;
+    const data = await getter(this.url);
     if (this.type === "html") {
       this.innerHTML = data;
       this.html = data;
@@ -40,12 +51,15 @@ export class UrlLoad extends HTMLElement {
         p1.split(".").forEach((v) => {
           val = val[v];
         });
-        let ret = JSON.stringify(val);
-        if(!ret){
-            return `{{${p1}}}`;
+        let ret = val;
+        if (typeof val === "object") {
+          ret = JSON.stringify(val);
+        }
+        if (!ret) {
+          return `{{${p1}}}`;
         }
         if (this.bslash) {
-           ret = ret.replace(/\"/g, '&quot;');
+          ret = ret.replace(/\"/g, "&quot;");
         }
         return ret;
       });
