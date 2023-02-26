@@ -49,10 +49,10 @@ export default class FXMLHttpRequest {
     const packet = await this._setPacketToSend();
     forwardToFIP(packet).then((response) => {
       this.readyState = ReadyState.HEADERS_RECEIVED;
-      this.response = response.body;
-      this.readyState = ReadyState.LOADING;
-      this.status = response.status;
       this.statusText = response.statusText;
+      this.status = response.status;
+      this.readyState = ReadyState.LOADING;
+      this.response = response.body;
       this.readyState = ReadyState.DONE;
       this.onload();
     });

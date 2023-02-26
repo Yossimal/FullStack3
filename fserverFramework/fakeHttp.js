@@ -18,8 +18,6 @@ class fakeHttpObj {
 
   constructor(ip) {
     this.ip = ip;
-    // this.fhttp = fhttp().setHandler(this.litsener);
-    // this.fhttp.ip = this.ip
   }
 
   /**
