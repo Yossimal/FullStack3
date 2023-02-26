@@ -1,0 +1,373 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "c:\\Develop\\Lev\\FullStack\\Part3\\FullStack3",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2023-02-20 20:11:14",
+            "filesum": 54,
+            "codesum": 1245,
+            "commentsum": 154,
+            "blanksum": 194,
+            "statistics": {
+                ".js": {
+                    "code": 932,
+                    "comment": 144,
+                    "blank": 160
+                },
+                ".md": {
+                    "code": 108,
+                    "comment": 0,
+                    "blank": 26
+                },
+                ".txt": {
+                    "code": 104,
+                    "comment": 0,
+                    "blank": 6
+                },
+                ".csv": {
+                    "code": 45,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".html": {
+                    "code": 31,
+                    "comment": 10,
+                    "blank": 2
+                },
+                ".json": {
+                    "code": 25,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 6,
+                    "code": 50,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\details.md"
+                },
+                {
+                    "blank": 6,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff-details.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff.csv"
+                },
+                {
+                    "blank": 7,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.csv"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.json"
+                },
+                {
+                    "blank": 7,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 85,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "client\\html\\top-navbar\\logged-in.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "client\\html\\top-navbar\\not-logged-in.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 19,
+                    "comment": 10,
+                    "filename": "client\\index.html"
+                },
+                {
+                    "blank": 7,
+                    "code": 46,
+                    "comment": 5,
+                    "filename": "client\\js\\common\\common.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 4,
+                    "filename": "client\\js\\common\\tests.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\async\\async.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 2,
+                    "filename": "client\\js\\html-tags\\async\\me-event.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 61,
+                    "comment": 12,
+                    "filename": "client\\js\\html-tags\\async\\me-url.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\html-tags.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\logic\\logic.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\logic\\logicalState.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\logic\\logicParam.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 48,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\logic\\me-for.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\logic\\me-if.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\router\\Container.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 32,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\router\\Redirect.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\router\\router.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\tag-names.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "client\\json\\test.json"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "data-manager\\data-actions\\coreActions.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "data-manager\\data-objects\\DataObject.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "data-manager\\data-objects\\User.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "data-manager\\dbConfig.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "data-manager\\uuid.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "fajax\\ffetch.js"
+                },
+                {
+                    "blank": 18,
+                    "code": 74,
+                    "comment": 51,
+                    "filename": "fajax\\FXMLHttpRequest.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "fajax\\ReadyState.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 26,
+                    "comment": 3,
+                    "filename": "fnetwork\\FDHCP.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 32,
+                    "comment": 1,
+                    "filename": "fnetwork\\FDNS.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 30,
+                    "comment": 10,
+                    "filename": "fnetwork\\FHTTP.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "fnetwork\\FHTTPTarget.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 13,
+                    "comment": 5,
+                    "filename": "fnetwork\\FIP.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "fnetwork\\Fnetwork.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 1,
+                    "filename": "fnetwork\\FPORT.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 5,
+                    "filename": "fnetwork\\packets-schemas\\FDNSPacket.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 64,
+                    "comment": 0,
+                    "filename": "fnetwork\\packets-schemas\\FHTTPRequestPacket.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 67,
+                    "comment": 0,
+                    "filename": "fnetwork\\packets-schemas\\FHTTPResponsePacket.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "fnetwork\\sender.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 59,
+                    "comment": 7,
+                    "filename": "fserverFramework\\fakeHttp.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "fserverFramework\\fcommuniacationMethod.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "fserverFramework\\fnet.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "fserverFramework\\request.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 54,
+                    "comment": 32,
+                    "filename": "fserverFramework\\response.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "server\\applyServer.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "server\\server.js"
+                }
+            ]
+        }
+    ]
+}

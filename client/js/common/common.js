@@ -52,7 +52,7 @@ export default class $ {
     return ffetch(url, { method: "GET" });
   }
 
-  static fpost(url, data) {
-    return ffetch(url, { ...data, method: "POST" });
+  static fpost(url, body,data) {
+    return ffetch(url, { ...data,body:body, method: "POST" });
   }
 }

@@ -21,7 +21,9 @@ export default class Request {
   }
 }
 
-function getParams(route) {}
+function getParams(route) {
+  
+}
 
 function getQueryParams(url) {
   const params = {};

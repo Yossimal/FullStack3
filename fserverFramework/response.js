@@ -10,7 +10,6 @@ export class Response {
     this.packet = packet;
     this.headers = packet.headers;
     this.type = packet.headers["content-type"];
-    this.status = packet.status;
     this.body = packet.body;
     this.version = packet.version;
     this.destination = `${packet.dstFIP}:${packet.dstPort}`;
@@ -25,7 +24,7 @@ export class Response {
     this.body = data;
     this.headers["content-length"] = data.length;
     this.headers["content-type"] = "text/html";
-    this.status = 200;
+    this.statusCode = 200;
     this.sendResponse(this);
   }
 
@@ -42,7 +41,7 @@ export class Response {
    * @returns this (for chaining)
    */
   status(code) {
-    this.status = code;
+    this.statusCode = code;
     return this;
   }
 
@@ -55,7 +54,7 @@ export class Response {
     this.body = JSON.stringify(data);
     this.headers["content-length"] = this.body.length;
     this.headers["content-type"] = "application/json";
-    this.status = 200;
+    this.statusCode = 200;
     this.sendResponse(this);
   }
 
@@ -65,7 +64,7 @@ export class Response {
    */
   redirect(url) {
     this.headers["location"] = url;
-    this.status = 302;
+    this.statusCode = 302;
     this.sendResponse(this);
   }
 
@@ -89,7 +88,7 @@ export class Response {
 function buildResponsePacket(response) {
   response.packet.body = response.body;
   response.packet.headers = response.headers;
-  response.packet.status = response.status;
+  response.packet.status = response.statusCode;
   response.packet.version = response.version;
   return response.packet;
 }

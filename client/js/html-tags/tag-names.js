@@ -18,5 +18,8 @@ export const tagNames = {
     eventListener:{
         name:'me-event'
     },
+    state:{
+        name:"me-state"
+    }
 
 }
