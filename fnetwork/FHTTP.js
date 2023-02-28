@@ -7,10 +7,10 @@ class FakeHTTPProtocol {
    * @param {FHTTPRequestPacket} packet the packet to send with the http protocol to the wanted port
    * @returns promise that resolve the response of the server
    */
-  send =  (packet) => {
-    return new Promise((resolve, reject) => {
+  send =  async (packet) => {
+    return new Promise(async (resolve, reject) => {
       if (!this.handler) reject("No handler set");
-      const response = this.handler(packet);
+      const response = await this.handler(packet);
       resolve(response);
     });
   }

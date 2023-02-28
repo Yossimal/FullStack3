@@ -34,11 +34,11 @@ class fakeHttpObj {
     this.port = port;
   };
 
-  litsener = (packet) => {
+  litsener = async (packet) => {
     if (!this.port) return;
     if (packet.destFIP !== this.ip) return;
     if (packet.destFPort !== this.port) return;
-    return this.route(packet);
+    return await this.route(packet);
   };
 
   terminate = () => {
@@ -48,9 +48,9 @@ class fakeHttpObj {
   /**
    * get the request packet and route it in the server and retrive the response from the route
    * @param {FHTTPRequestPacket} packet the request packet
-   * @returns the response packet
+   * @returns the response packet (Promise)
    */
-  route = (packet) => {
+  route = async (packet) => {
     const request = new Request(packet, this.fhttp.url, this);
     const method = this.methods[request.method.toLowerCase()];
     const target = request.target;
@@ -59,7 +59,8 @@ class fakeHttpObj {
       const resopnse = new Response(request);
       let results;
       resopnse.sender = (packet) => (results = packet);
-      targetFunc.func(request, resopnse);
+      await targetFunc.func(request, resopnse);
+      while (!results) await new Promise((r) => setTimeout(r, 10));
       return results;
     } else {
       let results;

@@ -74,3 +74,83 @@ fserverFramework\response.js, code is 54, comment is 32, blank is 9.
 server\applyServer.js, code is 2, comment is 0, blank is 1.
 server\server.js, code is 7, comment is 0, blank is 6.
 ===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2023-02-26 23:30:22
+count workspace : c:\Develop\Lev\FullStack\Part3\FullStack3
+total files : 58
+total code lines : 1502
+total comment lines : 216
+total blank lines : 213
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |            .js|           1184|            207|            177|     79|
+   |          .html|             36|              9|              4|    2.4|
+   |           .txt|            104|              0|              6|    6.9|
+   |            .md|            108|              0|             26|    7.2|
+   |           .csv|             45|              0|              0|    3.0|
+   |          .json|             25|              0|              0|    1.7|
+   -------------------------------------------------------------------------
+.VSCodeCounter\2023-02-16_13-55-55\details.md, code is 50, comment is 0, blank is 6.
+.VSCodeCounter\2023-02-16_13-55-55\diff-details.md, code is 9, comment is 0, blank is 6.
+.VSCodeCounter\2023-02-16_13-55-55\diff.csv, code is 2, comment is 0, blank is 0.
+.VSCodeCounter\2023-02-16_13-55-55\diff.md, code is 12, comment is 0, blank is 7.
+.VSCodeCounter\2023-02-16_13-55-55\diff.txt, code is 19, comment is 0, blank is 3.
+.VSCodeCounter\2023-02-16_13-55-55\results.csv, code is 43, comment is 0, blank is 0.
+.VSCodeCounter\2023-02-16_13-55-55\results.json, code is 1, comment is 0, blank is 0.
+.VSCodeCounter\2023-02-16_13-55-55\results.md, code is 37, comment is 0, blank is 7.
+.VSCodeCounter\2023-02-16_13-55-55\results.txt, code is 85, comment is 0, blank is 3.
+client\html\top-navbar\logged-in.html, code is 11, comment is 0, blank is 0.
+client\html\top-navbar\not-logged-in.html, code is 1, comment is 0, blank is 1.
+client\index.html, code is 24, comment is 9, blank is 3.
+client\js\common\common.js, code is 46, comment is 5, blank is 7.
+client\js\common\tests.js, code is 20, comment is 4, blank is 3.
+client\js\html-tags\async\async.js, code is 7, comment is 0, blank is 1.
+client\js\html-tags\async\me-event.js, code is 19, comment is 2, blank is 0.
+client\js\html-tags\async\me-url.js, code is 61, comment is 12, blank is 6.
+client\js\html-tags\html-tags.js, code is 6, comment is 0, blank is 1.
+client\js\html-tags\logic\logic.js, code is 9, comment is 0, blank is 1.
+client\js\html-tags\logic\logicalState.js, code is 24, comment is 1, blank is 7.
+client\js\html-tags\logic\logicParam.js, code is 12, comment is 0, blank is 2.
+client\js\html-tags\logic\me-for.js, code is 48, comment is 1, blank is 6.
+client\js\html-tags\logic\me-if.js, code is 26, comment is 0, blank is 3.
+client\js\html-tags\logic\me-state.js, code is 42, comment is 1, blank is 6.
+client\js\html-tags\router\Container.js, code is 15, comment is 0, blank is 3.
+client\js\html-tags\router\Redirect.js, code is 32, comment is 1, blank is 5.
+client\js\html-tags\router\router.js, code is 7, comment is 1, blank is 1.
+client\js\html-tags\tag-names.js, code is 23, comment is 0, blank is 2.
+client\json\test.json, code is 24, comment is 0, blank is 0.
+data-manager\init.js, code is 5, comment is 0, blank is 2.
+data-manager\schemas\Users.js, code is 3, comment is 0, blank is 3.
+fajax\ffetch.js, code is 19, comment is 0, blank is 1.
+fajax\FXMLHttpRequest.js, code is 97, comment is 56, blank is 16.
+fajax\ReadyState.js, code is 7, comment is 0, blank is 0.
+fnetwork\FDHCP.js, code is 26, comment is 3, blank is 5.
+fnetwork\FDNS.js, code is 32, comment is 1, blank is 6.
+fnetwork\FHTTP.js, code is 30, comment is 10, blank is 7.
+fnetwork\FHTTPTarget.js, code is 32, comment is 0, blank is 6.
+fnetwork\FIP.js, code is 13, comment is 5, blank is 4.
+fnetwork\Fnetwork.js, code is 0, comment is 0, blank is 0.
+fnetwork\FPORT.js, code is 6, comment is 1, blank is 1.
+fnetwork\packets-schemas\FDNSPacket.js, code is 7, comment is 5, blank is 0.
+fnetwork\packets-schemas\FHTTPRequestPacket.js, code is 64, comment is 0, blank is 4.
+fnetwork\packets-schemas\FHTTPResponsePacket.js, code is 67, comment is 0, blank is 4.
+fnetwork\sender.js, code is 2, comment is 1, blank is 3.
+fserverFramework\fakeHttp.js, code is 66, comment is 10, blank is 16.
+fserverFramework\fcommuniacationMethod.js, code is 10, comment is 0, blank is 1.
+fserverFramework\fnet.js, code is 13, comment is 0, blank is 3.
+fserverFramework\request.js, code is 41, comment is 1, blank is 5.
+fserverFramework\response.js, code is 53, comment is 32, blank is 9.
+LDBJS\connection.js, code is 40, comment is 5, blank is 4.
+LDBJS\dataObject.js, code is 25, comment is 8, blank is 1.
+LDBJS\db.js, code is 18, comment is 0, blank is 6.
+LDBJS\ldb.js, code is 26, comment is 5, blank is 3.
+LDBJS\paths.js, code is 6, comment is 12, blank is 0.
+LDBJS\schemaData.js, code is 64, comment is 24, blank is 8.
+server\applyServer.js, code is 2, comment is 0, blank is 1.
+server\server.js, code is 13, comment is 0, blank is 4.
+===============================================================================

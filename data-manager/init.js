@@ -1,7 +1,9 @@
-import {ldb as ldbjs} from '../LDBJS/ldb.js'
+import ldbjs from "../LDBJS/ldb.js";
 
 export var ldb;
 
-export function init(connectionString){
-    ldb = ldbjs();
+const connectionString = "type:local$user:amazingUser";
+
+export function initDatabase() {
+  ldbjs.connect(connectionString);
 }

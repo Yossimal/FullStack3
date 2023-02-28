@@ -4,12 +4,30 @@ import $ from "./common.js";
 var state = logicalState("isLoggedIn", false);
 document.getElementById("swap").onclick = () => {
   state.value = !state.value;
+  //   const userToAdd = {
+  //     userData: {
+  //       _id:"9d5212af-4deb-4477-8e5c-fa6cbd536107",
+  //       phone: "78942344125",
+  //     },
+  //   };
+  //   $.fpost("my.awsome.site.com/updateUser",userToAdd, {}).then(
+  //     (res) => {
+  //       console.log(JSON.parse(res));
+  //     }
+  //   );
+  // };
+
+  const loginData = {
+    userData: {
+      name: "John Doa",
+      password: "12345678",
+    },
+  };
+  $.fpost("my.awsome.site.com/login", loginData, {}).then((res) => {
+    console.log(JSON.parse(res));
+  });
 };
 const dat = [];
-// setInterval(() => {
-//   dat.push({val:Math.random() * 100});
-//   document.dispatchEvent(new CustomEvent("on-time", {detail:{data:dat}}));
-// }, 2000);
 
 var calculation = logicalState("calc");
 

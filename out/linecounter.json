@@ -368,6 +368,396 @@
                     "filename": "server\\server.js"
                 }
             ]
+        },
+        {
+            "version": "0.2.7",
+            "counttime": "2023-02-26 23:30:22",
+            "filesum": 58,
+            "codesum": 1502,
+            "commentsum": 216,
+            "blanksum": 213,
+            "statistics": {
+                ".js": {
+                    "code": 1184,
+                    "comment": 207,
+                    "blank": 177
+                },
+                ".html": {
+                    "code": 36,
+                    "comment": 9,
+                    "blank": 4
+                },
+                ".txt": {
+                    "code": 104,
+                    "comment": 0,
+                    "blank": 6
+                },
+                ".md": {
+                    "code": 108,
+                    "comment": 0,
+                    "blank": 26
+                },
+                ".csv": {
+                    "code": 45,
+                    "comment": 0,
+                    "blank": 0
+                },
+                ".json": {
+                    "code": 25,
+                    "comment": 0,
+                    "blank": 0
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 6,
+                    "code": 50,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\details.md"
+                },
+                {
+                    "blank": 6,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff-details.md"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff.csv"
+                },
+                {
+                    "blank": 7,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\diff.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 43,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.csv"
+                },
+                {
+                    "blank": 0,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.json"
+                },
+                {
+                    "blank": 7,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.md"
+                },
+                {
+                    "blank": 3,
+                    "code": 85,
+                    "comment": 0,
+                    "filename": ".VSCodeCounter\\2023-02-16_13-55-55\\results.txt"
+                },
+                {
+                    "blank": 0,
+                    "code": 11,
+                    "comment": 0,
+                    "filename": "client\\html\\top-navbar\\logged-in.html"
+                },
+                {
+                    "blank": 1,
+                    "code": 1,
+                    "comment": 0,
+                    "filename": "client\\html\\top-navbar\\not-logged-in.html"
+                },
+                {
+                    "blank": 3,
+                    "code": 24,
+                    "comment": 9,
+                    "filename": "client\\index.html"
+                },
+                {
+                    "blank": 7,
+                    "code": 46,
+                    "comment": 5,
+                    "filename": "client\\js\\common\\common.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 20,
+                    "comment": 4,
+                    "filename": "client\\js\\common\\tests.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\async\\async.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 19,
+                    "comment": 2,
+                    "filename": "client\\js\\html-tags\\async\\me-event.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 61,
+                    "comment": 12,
+                    "filename": "client\\js\\html-tags\\async\\me-url.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\html-tags.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\logic\\logic.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 24,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\logic\\logicalState.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\logic\\logicParam.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 48,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\logic\\me-for.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\logic\\me-if.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 42,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\logic\\me-state.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 15,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\router\\Container.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 32,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\router\\Redirect.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 1,
+                    "filename": "client\\js\\html-tags\\router\\router.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "client\\js\\html-tags\\tag-names.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 24,
+                    "comment": 0,
+                    "filename": "client\\json\\test.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "data-manager\\init.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "data-manager\\schemas\\Users.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "fajax\\ffetch.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 97,
+                    "comment": 56,
+                    "filename": "fajax\\FXMLHttpRequest.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "fajax\\ReadyState.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 26,
+                    "comment": 3,
+                    "filename": "fnetwork\\FDHCP.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 32,
+                    "comment": 1,
+                    "filename": "fnetwork\\FDNS.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 30,
+                    "comment": 10,
+                    "filename": "fnetwork\\FHTTP.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "fnetwork\\FHTTPTarget.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 13,
+                    "comment": 5,
+                    "filename": "fnetwork\\FIP.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0,
+                    "filename": "fnetwork\\Fnetwork.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 6,
+                    "comment": 1,
+                    "filename": "fnetwork\\FPORT.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 7,
+                    "comment": 5,
+                    "filename": "fnetwork\\packets-schemas\\FDNSPacket.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 64,
+                    "comment": 0,
+                    "filename": "fnetwork\\packets-schemas\\FHTTPRequestPacket.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 67,
+                    "comment": 0,
+                    "filename": "fnetwork\\packets-schemas\\FHTTPResponsePacket.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 2,
+                    "comment": 1,
+                    "filename": "fnetwork\\sender.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 66,
+                    "comment": 10,
+                    "filename": "fserverFramework\\fakeHttp.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "fserverFramework\\fcommuniacationMethod.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "fserverFramework\\fnet.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 41,
+                    "comment": 1,
+                    "filename": "fserverFramework\\request.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 53,
+                    "comment": 32,
+                    "filename": "fserverFramework\\response.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 40,
+                    "comment": 5,
+                    "filename": "LDBJS\\connection.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 25,
+                    "comment": 8,
+                    "filename": "LDBJS\\dataObject.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "LDBJS\\db.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 26,
+                    "comment": 5,
+                    "filename": "LDBJS\\ldb.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 6,
+                    "comment": 12,
+                    "filename": "LDBJS\\paths.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 64,
+                    "comment": 24,
+                    "filename": "LDBJS\\schemaData.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "server\\applyServer.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "server\\server.js"
+                }
+            ]
         }
     ]
 }
