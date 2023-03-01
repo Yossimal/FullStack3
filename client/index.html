@@ -4,32 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/client/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="/client/bootstrap/css/bootstrap-theme.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div id="top-navbar"></div>
-    <button id="swap" type="button">click me!</button>
-    <me-url url="my.awsome.site.com" fajax="true"> {{data}} </me-url><br />
-    <label for="x">num 1: </label><input type="text" id="x" /><br />
+    <!-- <me-container root="./html/tests/basicTests.html"></me-container> -->
+    <me-container name="main" root="/client/html/login/login.html"></me-container>
 
-    <label for="y">num 2: </label><input type="text" id="y" /><br />
-    <button type="button" id="calculate">calculate</button>
-    <me-if if="st('calc')">
-      <me-state state="calc"> {{x}} + {{y}} = {{ans}} {{data}} </me-state>
-    </me-if>
-    
-    <me-container root="./html/top-navbar/logged-in.html"></me-container>
-    <!-- <me-if if="st('state')">
-      <div>state is true</div>
-    </me-if>
-    <me-if if="!st('state')">
-      <div>state is false</div>
-    </me-if> -->
-    <!-- <me-for for="st('arr')">
-      <me-if if="{{val}} % 2 === 0">{{val}}</me-if>
-    </me-for> -->
     <script type="module" src="../server/server.js"></script>
-    <script type="module" src="js/common/tests.js"></script>
     <script type="module" src="js/html-tags/html-tags.js"></script>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>

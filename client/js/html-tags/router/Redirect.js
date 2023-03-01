@@ -23,6 +23,7 @@ export class Redirect extends HTMLElement {
     this.element.onclick = this.onclick;
     this.element.className = this.className;
     this.element.innerHTML = this.html;
+    this.className = "";
     this.appendChild(this.element)
 
     let parentContainer = this.parentElement;

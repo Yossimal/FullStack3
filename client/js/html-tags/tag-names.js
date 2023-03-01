@@ -20,6 +20,9 @@ export const tagNames = {
     },
     state:{
         name:"me-state"
-    }
+    },
+    script:{
+        name:"me-script"
+    },
 
 }
