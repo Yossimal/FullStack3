@@ -28,7 +28,7 @@ export async function addUser(user) {
 /**
  *
  * @param {any} user the user to update with the id of the user to update
- * @returns
+ * @returns promise of the userupdated
  */
 export async function updateUser(user) {
   if (!user._id) {
@@ -47,6 +47,11 @@ export async function updateUser(user) {
   }
 }
 
+/**
+ * 
+ * @param {any} id the user id to delete
+ * @returns promise of the user deleted
+ */
 export async function deleteUser(id) {
   if (!id) {
     return { ok: false, reason: Reasons.NO_USER_ID };
@@ -57,6 +62,11 @@ export async function deleteUser(id) {
   }));
 }
 
+/**
+ * 
+ * @param {any} userName the username to get
+ * @returns promise with the right user
+ */
 export async function getUserByName(userName) {
   return User.find({ name: userName }).then((dat) => {
     if (dat.length === 0) {
