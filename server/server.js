@@ -6,6 +6,11 @@ import {
   deleteUser,
   getUserByName,
 } from "../data-manager/dataFunctions/users.js";
+import {
+  addContact,
+  updateContact,
+  deleteContact,
+} from "../data-manager/dataFunctions/contacts.js";
 
 const app = fnet("my.awsome.site.com");
 app.text();
@@ -80,6 +85,53 @@ app.post("/login", (req, res) => {
       }
     }
     res.json({ ok: false, reason: "wrong password or username" });
+  });
+});
+
+////////////////////////////////////////////////////////////////////
+
+app.put("/addContact", (req, res) => {
+  const contactData = JSON.parse(req.body).contactData;
+  if (!contactData) {
+    res.json({ ok: false, reason: "no data" });
+    return;
+  }
+  addContact(contactData).then((results) => {
+    if (results.ok) {
+      res.json({ ok: true });
+    } else {
+      res.json({ ok: false, reason: results.reason });
+    }
+  });
+});
+
+app.post("/updateContact", (req, res) => {
+  const contactData = JSON.parse(req.body).contactData;
+  if (!contactData) {
+    res.json({ ok: false, reason: "no data" });
+    return;
+  }
+  updateContact(contactData).then((results) => {
+    if (results.ok) {
+      res.json({ ok: true });
+    } else {
+      res.json({ ok: false, reason: results.reason });
+    }
+  });
+});
+
+app.delete("/deleteContact", (req, res) => {
+  const contactId = JSON.parse(req.body).contactId;
+  if (!contactId) {
+    res.json({ ok: false, reason: "no data" });
+    return;
+  }
+  deleteContact(contactId).then((results) => {
+    if (results.ok) {
+      res.json({ ok: true });
+    } else {
+      res.json({ ok: false, reason: results.reason });
+    }
   });
 });
 

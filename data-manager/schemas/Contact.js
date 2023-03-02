@@ -1,6 +1,6 @@
 import DataObject from "../../LDBJS/dataObject.js";
 
-export class Contact extends DataObject {
+export default class Contact extends DataObject {
   constructor(data) {
     super(data);
   }
