@@ -1,8 +1,11 @@
 import $ from "../common/common.js";
 import { redirect } from "../html-tags/router/Container.js";
 import {logicalState} from "../html-tags/logic/logicalState.js";
+import { registerFunction } from "../html-tags/router/Script.js";
 
-$.id("login").onclick = () => {
+registerFunction("login", login);
+
+export function login(){
     const userName = $.id("username").value;
     const password = $.id("password").value;
     const data = {userData: {name: userName, password: password}};
@@ -17,3 +20,4 @@ $.id("login").onclick = () => {
         }
     });
 };
+

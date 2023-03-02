@@ -92,3 +92,19 @@ async function checkUserValidationForAdd(user) {
 
   return { ok: true };
 }
+
+/**
+ * check if user is valid by its id
+ * @param {string} id the id of the user
+ * @returns is the user id valid
+ */
+export function getUserById(id) {
+  if (!id) {
+    return {ok: false, reason: Reasons.NO_USER_ID};
+  } 
+  const user = User.find({ _id: id });
+  if (user.length === 0) {
+    return {ok: false, reason: Reasons.USER_NOT_FOUND};
+  }
+  return {ok: true,data:user[0]};
+}

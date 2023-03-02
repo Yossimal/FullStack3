@@ -1,19 +1,41 @@
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12 text-center">
-            <h1>Log in</h1>
-        </div>
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1>Log in</h1>
     </div>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <input type="text" class="form-control" placeholder="Username" id="username" />
-            <input type="password" class="form-control" placeholder="Password" id="password" />
-            <button class="btn btn-block btn-primary" id="login">Log in</button>
-            <me-redirect type="button" class="btn btn-block btn-info" href="/client/html/register/register.html" id="register">Register</me-redirect>
-        </div>
-        <div class="col-lg-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        id="username"
+      />
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        id="password"
+      />
+      <button
+        class="btn btn-block btn-primary"
+        onclick="fn('login')"
+        id="login"
+      >
+        Log in
+      </button>
+      <me-redirect
+        type="button"
+        class="btn btn-block btn-lg btn-info"
+        href="/client/html/register/register.html"
+        id="register"
+        >Register</me-redirect
+      >
     </div>
+    <div class="col-lg-2"></div>
+  </div>
 </div>
 
 <me-script src="/client/js/login/login.js" type="module"></me-script>

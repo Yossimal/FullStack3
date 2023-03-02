@@ -63,4 +63,8 @@ export default class $ {
   static fdelete(url, body, data) {
     return ffetch(url, { ...data, body: body, method: "DELETE" });
   }
+
+  static auth(requestBody) {
+    return { ...requestBody, auth: { _id: sessionStorage.getItem("auth") } };
+  }
 }

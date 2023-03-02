@@ -51,7 +51,7 @@ export default class SchemaData {
         this.constructor._path,
         JSON.stringify({ ...data, [this._id]: toAdd })
       );
-      resolve(data);
+      resolve(toAdd);
     });
   }
 

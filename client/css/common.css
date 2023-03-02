@@ -1,0 +1,10 @@
+a.no-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-corner {
+    position: absolute;
+    bottom: 0;    
+    right: 0;
+}

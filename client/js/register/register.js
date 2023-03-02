@@ -1,7 +1,10 @@
 import $ from "../common/common.js";
 import { redirect } from "../html-tags/router/Container.js";
+import { registerFunction } from "../html-tags/router/Script.js";
 
-$.id("register").onclick = () => {
+registerFunction("register", register)
+
+export function register(){
   if (!checkUserData()) {
     return;
   }

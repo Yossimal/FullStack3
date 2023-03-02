@@ -1,4 +1,4 @@
-import { Container } from "./Container.js";
+import { Container, redirect } from "./Container.js";
 import $ from "../../common/common.js";
 import { tagNames } from "../tag-names.js";
 
@@ -6,6 +6,7 @@ export class Redirect extends HTMLElement {
   parentContainer;
   href = this.getAttribute("href");
   type = this.getAttribute("type");
+  target = this.getAttribute("target");
   html = this.innerHTML;
 
   constructor() {
@@ -21,10 +22,12 @@ export class Redirect extends HTMLElement {
     }
 
     this.element.onclick = this.onclick;
-    this.element.className = this.className;
+    if (this.className) {
+      this.element.className = this.className;
+    }
     this.element.innerHTML = this.html;
-    this.className = "";
-    this.appendChild(this.element)
+    this.className = "me-redirect";
+    this.appendChild(this.element);
 
     let parentContainer = this.parentElement;
     while (parentContainer.tagName != tagNames.container.name) {
@@ -34,6 +37,10 @@ export class Redirect extends HTMLElement {
   }
 
   onclick = () => {
-   this.parentContainer.redirect(this.href);
+    if (!this.target) {
+      this.parentContainer.redirect(this.href);
+    } else {
+      redirect(this.target, this.href);
+    }
   };
 }

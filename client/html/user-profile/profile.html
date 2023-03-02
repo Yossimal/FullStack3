@@ -1,0 +1,120 @@
+<me-state state="user">
+  <div class="container">
+    <!-- username -->
+    <div class="row">
+      <div class="col-md-3 text-center"></div>
+      <div class="col-md-3 text-center">User Name:</div>
+      <div class="col-md-3 text-center">
+        <me-if if="st('isEdit')">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="User Name"
+            id="userName"
+            value="{{name}}"
+          />
+        </me-if>
+        <me-if if="!st('isEdit')">
+          <span>{{name}}</span>
+        </me-if>
+      </div>
+      <div class="col-md-3 text-center"></div>
+    </div>
+    <!-- phone number-->
+    <div class="row">
+      <div class="col-md-3 text-center"></div>
+      <div class="col-md-3 text-center">Phone Number:</div>
+      <div class="col-md-3 text-center">
+        <me-if if="st('isEdit')">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Phone Number"
+            id="phone"
+            value="{{phone}}"
+          />
+        </me-if>
+        <me-if if="!st('isEdit')">
+          <span>{{phone}}</span>
+        </me-if>
+      </div>
+      <div class="col-md-3 text-center"></div>
+    </div>
+
+    <!--email-->
+    <div class="row">
+      <div class="col-md-3 text-center"></div>
+      <div class="col-md-3 text-center">User Name:</div>
+      <div class="col-md-3 text-center">
+        <me-if if="st('isEdit')">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Email"
+            id="email"
+            value="{{email}}"
+          />
+        </me-if>
+        <me-if if="!st('isEdit')">
+          <span>{{email}}</span>
+        </me-if>
+      </div>
+      <div class="col-md-3 text-center"></div>
+    </div>
+
+    <!-- edit password -->
+    <me-if if="st('isEdit')">
+      <div class="row">
+        <div class="col-md-3 text-center"></div>
+        <div class="col-md-3 text-center">
+          <span>Change Password:</span>
+        </div>
+        <div class="col-md-3 text-center">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            id="password"
+            value=""
+          />
+        </div>
+        <div class="col-md-3 text-center"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center"></div>
+        <div class="col-md-3 text-center">
+          <span>Confirm Password:</span>
+        </div>
+        <div class="col-md-3 text-center">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            id="confirmPassword"
+            value=""
+          />
+        </div>
+        <div class="col-md-3 text-center"></div>
+      </div>
+    </me-if>
+
+    <button class="btn btn-warning" onclick="fn('toggleEdit')">
+      <me-if if="st('isEdit')">
+        <span>Cancel</span>
+      </me-if>
+      <me-if if="!st('isEdit')">
+        <span>Edit</span>
+      </me-if>
+    </button>
+    <me-if if="st('isEdit')">
+      <button class="btn btn-primary" onclick="fn('editProfile')">
+        <span>Save</span>
+      </button>
+    </me-if>
+  </div>
+</me-state>
+
+<me-script
+  type="module"
+  src="/client/js/user-profile/user-profile.js"
+></me-script>

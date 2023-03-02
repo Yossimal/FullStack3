@@ -6,6 +6,7 @@ export function logicalState(name,initialValue = undefined) {
 }
 
 export function st(name){
+  if(!window.states) window.states = {};
   return window.states[name];
 }
 
