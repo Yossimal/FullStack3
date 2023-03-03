@@ -9,6 +9,9 @@ export const Reasons = {
   PHONE_NUMBER_EXISTS: "phone number already saved for this user",
   NO_CONTACT_ID: "no contact id",
   CONTACT_NOT_FOUND: "contact not found",
+  NO_NAME: "no contact name",
+  NO_PHONE: "no contact phone",
+  INVALID_PHONE: "invalid phone number",
 };
 
 /**
@@ -106,6 +109,15 @@ async function checkContactValidationForAdd(contact) {
   if (check.length !== 0 && check[0]._id != contact._id) {
     return { ok: false, reason: Reasons.PHONE_NUMBER_EXISTS };
   }
+  if (!contact.name || contact.name.length === 0) {
+    return { ok: false, reason: Reasons.NO_NAME };
+  }
+  if (!contact.phone) {
+    return { ok: false, reason: Reasons.NO_PHONE };
+  }
+  if (!contact.phone.match(/^[0-9]{10}$/)) {
+    return { ok: false, reason: Reasons.INVALID_PHONE };
+  }
   return { ok: true };
 }
 
@@ -114,7 +126,7 @@ async function checkContactValidationForAdd(contact) {
  * @param {string} id the user id
  * @returns promise of all the contacts of the user
  */
-async function allContactsOfUser(id) {
+export async function allContactsOfUser(id) {
   if (!id) {
     return { ok: false, reason: Reasons.NO_USER_ID };
   }

@@ -18,6 +18,7 @@ export class State extends HTMLElement {
 
   updateState = () => {
     let state = st(this.state);
+    if(state==null) return;
     let html = "";
     html += this.inner.replace(/{{\s*([a-zA-Z0-9_]+)\s*}}/g, (match, p1) => {
       return state[p1] ?? `{{${p1}}}`;

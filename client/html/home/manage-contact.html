@@ -1,0 +1,93 @@
+<!-- The Modal -->
+<div
+  class="modal fade"
+  id="ContactEditor"
+  data-backdrop="static"
+  data-keyboard="false"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Add Contact</h4>
+        <button
+          type="button"
+          class="close"
+          onclick="fn('unsetContact')"
+          data-dismiss="modal"
+        >
+          &times;
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <label class="text-center" for="contactName"
+                >Contact Name:
+              </label>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                id="contactName"
+                class="form-control"
+                placeholder="Contact Name"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <label class="text-center" for="contactName"
+                >Contact Phone Number:
+              </label>
+            </div>
+            <div class="col-md-6">
+              <input
+                type="text"
+                id="contactPhone"
+                class="form-control"
+                placeholder="Contact Phone Number"
+              />
+            </div>
+          </div>
+          <me-if if="st('current-contact')">
+            <div class="row">
+              <div class="col-lg-12">
+                <p id="callingMe">
+                  
+                </p>
+              </div>
+            </div>
+          </me-if>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          type="button"
+          onclick="fn('editContact')"
+          class="btn btn-success"
+          data-dismiss="modal"
+        >
+          Add Contact
+        </button>
+        <me-if if="st('current-contact')">
+          <button
+            type="button"
+            onclick="fn('deleteContact')"
+            class="btn btn-danger"
+            data-dismiss="modal"
+          >
+            Delete Contact
+          </button>
+        </me-if>
+      </div>
+    </div>
+  </div>
+</div>
+
+<me-script src="/client/js/home/manage-contact.js" type="module"></me-script>

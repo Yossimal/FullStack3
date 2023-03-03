@@ -29,5 +29,7 @@ app.post("/login", authenticationFunctions.login);
 app.put("/addContact", contactManagment.createContact);
 app.post("/editContact", contactManagment.editContact);
 app.delete("/deleteContact", contactManagment.deleteContact);
+app.get("/allContactsOfUser", contactManagment.allContactsOfUser);
+app.get("/savedMeContacts", contactManagment.savedMeContacts);
 
 app.litsen(80);

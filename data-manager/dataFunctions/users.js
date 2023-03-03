@@ -48,7 +48,7 @@ export async function updateUser(user) {
 }
 
 /**
- * 
+ *
  * @param {any} id the user id to delete
  * @returns promise of the user deleted
  */
@@ -63,7 +63,7 @@ export async function deleteUser(id) {
 }
 
 /**
- * 
+ *
  * @param {any} userName the username to get
  * @returns promise with the right user
  */
@@ -99,12 +99,14 @@ async function checkUserValidationForAdd(user) {
  * @returns is the user id valid
  */
 export function getUserById(id) {
-  if (!id) {
-    return {ok: false, reason: Reasons.NO_USER_ID};
-  } 
-  const user = User.find({ _id: id });
-  if (user.length === 0) {
-    return {ok: false, reason: Reasons.USER_NOT_FOUND};
-  }
-  return {ok: true,data:user[0]};
+  return User.find({ _id: id }).then((user) => {
+    if (!id) {
+      return { ok: false, reason: Reasons.NO_USER_ID };
+    }
+
+    if (user.length === 0) {
+      return { ok: false, reason: Reasons.USER_NOT_FOUND };
+    }
+    return { ok: true, data: user[0] };
+  });
 }

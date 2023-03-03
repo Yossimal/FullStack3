@@ -1,3 +1,3 @@
-function fn(name){
-    return window.functions[name]();
+function fn(name,...args){
+    return window.functions[name](...args);
 }

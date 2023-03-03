@@ -46,6 +46,7 @@ html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 article,
@@ -204,7 +205,7 @@ caption {
 }
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+  text-align: match-parent;
 }
 label {
   display: inline-block;

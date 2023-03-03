@@ -1,10 +1,57 @@
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-        <me-redirect class="navbar-brand" type="a" href="/client/html/home/home.html" target="main">WebSiteName</me-redirect>
-        </div>
-        <ul class="nav navbar-nav">
-        <!-- <li class="active"><a href="#">Home</a></li> -->
-        <li><a href="#"><me-redirect href="/client/html/user-profile/profile.html" type="a" class="no-style" target="main">Page 1</me-redirect></a></li>
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <me-redirect
+    class="navbar-brand"
+    type="a"
+    href="/client/html/home/home.html"
+    target="main"
+    >Me</me-redirect
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <!-- <li class="active"><a href="#">Home</a></li> -->
+      <li nav-item>
+        <me-redirect
+          href="/client/html/user-profile/profile.html"
+          type="a"
+          class="nav-link"
+          target="main"
+          >My Profile</me-redirect
+        >
+      </li>
+      <me-if if="st('saved-me').length!==0">
+        <li class="nav-link">
+          <me-redirect
+            href="/client/html/my-names/my-names.html"
+            type="a"
+            class="nav-link"
+            target="main"
+            >My Names</me-redirect
+          >
+        </li>
+      </me-if>
+      <li class="nav-item">
+        <me-redirect
+          href="/client/html/login/login.html"
+          type="a"
+          onclick="fn('logOut')"
+          class="nav-link"
+          target="main"
+          >Logout</me-redirect
+        >
+      </li>
+    </ul>
+  </div>
 </nav>
+
+<me-script src="/client/js/common/navbar.js" type="module"></me-script>
