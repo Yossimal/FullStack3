@@ -64,7 +64,7 @@ export default class SchemaData {
     return new Promise((resolve, reject) => {
       query ??= {};
       const data = JSON.parse(localStorage.getItem(this._path)) ?? {};
-      const arrData = Object.keys(data).map((key) => ({ ...data[key] }));
+      const arrData = Object.keys(data).map((key) => ({ ...data[key] })) ?? [];
       const results = arrData.filter((item) =>
         Object.keys(query).every((key) => item[key] === query[key])
       );
@@ -122,7 +122,7 @@ export default class SchemaData {
         const count = dataArr.length;
         //remove all the data that matches the query
         const newData = dataArr.filter(
-          (item) => !Object.keys(query).every((key) => item[key] !== query[key])
+          (item) => Object.keys(query).every((key) => item[key] !== query[key])
         );
         const newCount = newData.length;
         //convert the array to object for saving

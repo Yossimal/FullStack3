@@ -29,8 +29,8 @@
           >My Profile</me-redirect
         >
       </li>
-      <me-if if="st('saved-me').length!==0">
-        <li class="nav-link">
+      <me-if if="st('saved-me')&&st('saved-me').length!==0">
+        <li class="nav-item">
           <me-redirect
             href="/client/html/my-names/my-names.html"
             type="a"

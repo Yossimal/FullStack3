@@ -4,6 +4,7 @@ import { initDatabase } from "../data-manager/init.js";
 import * as authenticationFunctions from "./server-functions/authentication.js";
 import * as userManagmentFunctions from "./server-functions/user-managment.js";
 import * as contactManagment from "./server-functions/contact-managment.js";
+import * as messageManagment from "./server-functions/messages-managment.js";
 
 const app = fnet("my.awsome.site.com");
 app.text();
@@ -31,5 +32,8 @@ app.post("/editContact", contactManagment.editContact);
 app.delete("/deleteContact", contactManagment.deleteContact);
 app.get("/allContactsOfUser", contactManagment.allContactsOfUser);
 app.get("/savedMeContacts", contactManagment.savedMeContacts);
+//messages managment
+app.put("/sendMessage", messageManagment.sendMessage);
+app.get("/getConversationMessages", messageManagment.getConversationMessages);
 
 app.litsen(80);

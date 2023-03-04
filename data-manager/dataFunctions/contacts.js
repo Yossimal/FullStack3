@@ -115,7 +115,7 @@ async function checkContactValidationForAdd(contact) {
   if (!contact.phone) {
     return { ok: false, reason: Reasons.NO_PHONE };
   }
-  if (!contact.phone.match(/^[0-9]{10}$/)) {
+  if (!contact.phone.match(/^[+]?[0-9]{8}[0-9]*$/)) {
     return { ok: false, reason: Reasons.INVALID_PHONE };
   }
   return { ok: true };

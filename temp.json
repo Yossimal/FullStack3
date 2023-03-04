@@ -1,94 +1,11 @@
 {
   "a": [
     {
-      "9d5212af-4deb-4477-8e5c-fa6cbd536107": {
-        "_id": "9d5212af-4deb-4477-8e5c-fa6cbd536107",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "mail.mail@mail.mail"
-      }
-    },
-
-    {
-      "78c17662-4b74-44d2-85cb-60074eef3fab": {
-        "_id": "78c17662-4b74-44d2-85cb-60074eef3fab"
-      },
-      "b91be4d1-5b24-487f-bccc-d65af2273fdf": {
-        "_id": "b91be4d1-5b24-487f-bccc-d65af2273fdf",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "mail.mail@mail.mail"
-      }
-    },
-    {
-      "9d5212af-4deb-4477-8e5c-fa6cbd536107": {
-        "_id": "9d5212af-4deb-4477-8e5c-fa6cbd536107",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "mail.mail@mail.mail"
-      },
-      "c8b472bd-5744-4e5f-a863-ebe82e7109c2": {
-        "_id": "c8b472bd-5744-4e5f-a863-ebe82e7109c2",
-        "name": "John Dodasfads",
-        "phone": "78942344125",
-        "password": "123456789",
-        "email": "mail.mail@mail.mail"
-      }
-    },
-
-    {
-      "9d5212af-4deb-4477-8e5c-fa6cbd536107": {
-        "_id": "9d5212af-4deb-4477-8e5c-fa6cbd536107",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "dfads.mail@mail.maila"
-      },
-      "c8b472bd-5744-4e5f-a863-ebe82e7109c2": {
-        "_id": "c8b472bd-5744-4e5f-a863-ebe82e7109c2",
-        "name": "John Dodasfads",
-        "phone": "78942344125",
-        "password": "123456789",
-        "email": "mail.mail@mail.mail"
-      }
-    },
-
-    {
-      "9d5212af-4deb-4477-8e5c-fa6cbd536107": {
-        "_id": "9d5212af-4deb-4477-8e5c-fa6cbd536107",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "dfads.mail@mail.maila"
-      },
-      "c8b472bd-5744-4e5f-a863-ebe82e7109c2": {
-        "_id": "c8b472bd-5744-4e5f-a863-ebe82e7109c2",
-        "name": "John Dodasfads",
-        "phone": "78942344125",
-        "password": "123456789",
-        "email": "mail.mail@mail.mail"
-      }
-    },
-
-    {
-      "9d5212af-4deb-4477-8e5c-fa6cbd536107": {
-        "_id": "9d5212af-4deb-4477-8e5c-fa6cbd536107",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "dfads.mail@mail.maila"
-      }
-    },
-    {
-      "9d5212af-4deb-4477-8e5c-fa6cbd536107": {
-        "_id": "9d5212af-4deb-4477-8e5c-fa6cbd536107",
-        "name": "John Doa",
-        "phone": "78944125",
-        "password": "123456789",
-        "email": "dfads.mail@mail.maila"
+      "cce02218-f335-426c-970c-119b9bfbf284": {
+        "_id": "cce02218-f335-426c-970c-119b9bfbf284",
+        "content": "hello",
+        "senderPhoneNumber": "0558832880",
+        "time": "2023-03-04T18:58:25.119Z"
       }
     }
   ]

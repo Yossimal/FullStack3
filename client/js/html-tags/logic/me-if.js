@@ -1,4 +1,5 @@
 import { st } from "./logicalState.js";
+import { debug } from "../html-tags.js";
 
 export class Condition extends HTMLElement {
   constructor() {
@@ -24,6 +25,10 @@ export class Condition extends HTMLElement {
       } else {
         this.makeInvisible();
       }
-    } catch (e) {}
+    } catch (e) {
+      if (debug) {
+        console.error(e);
+      }
+    }
   };
 }

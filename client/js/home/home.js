@@ -1,9 +1,11 @@
 import { registerFunction } from "../html-tags/router/Script.js";
 import $ from "../common/common.js";
 import { logicalState, st } from "../html-tags/logic/logicalState.js";
+import { redirect } from "../html-tags/router/Container.js";
 
 registerFunction("setContact", setContact);
 registerFunction("loadContacts", loadContacts);
+registerFunction("openConversation", openConversation);
 
 export function setContact(contactId) {
   const contact = st("contacts").find((c) => c._id === contactId);
@@ -26,4 +28,9 @@ export function loadContacts() {
       }
     }
   );
+}
+
+export function openConversation(contactPhone) {
+  logicalState("conversation-contact", contactPhone);
+  redirect("main", "/client/html/conversation/conversation.html");
 }
