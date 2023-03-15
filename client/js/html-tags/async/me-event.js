@@ -7,7 +7,6 @@ export class EventLitsenerTag extends HTMLElement {
     this.innerHTML = "";
   }
   onEventInvoked(data) {
-    // console.log(data.detail);
     // replace the data of html where there is pattern of {{val}} with value of data only if data[val] is not undefined. and also check for options like {{val.val}} and {{val.val.val}} also replace " with &quot;
     this.innerHTML = this.html.replace(/{{([^}]+)}}/g, (match, p1) => {
         let val = data.detail;

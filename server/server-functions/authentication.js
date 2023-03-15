@@ -1,7 +1,5 @@
 import {
   addUser as addUserDB,
-  updateUser as updateUserDB,
-  deleteUser as deleteUserDB,
   getUserByName as getUserByNameDB,
 } from "../../data-manager/dataFunctions/users.js";
 

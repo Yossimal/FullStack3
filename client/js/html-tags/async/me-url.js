@@ -65,20 +65,6 @@ export class UrlLoad extends HTMLElement {
       });
     }
 
-    // if (this.type === "json") {
-    //   this.innerHTML = this.html.replace(/{{([^}]+)}}/g, (match, p1) => {
-    //     let val = JSON.parse(data);
-    //     p1.split(".").forEach((v) => {
-    //       val = val[v];
-    //     });
-    //     let ret = JSON.stringify(val);
-    //     if(this.bslash){
-    //         ret = ret.replace(/\"/g, "\\\"");
-    //     }
-    //     return ret;
-    //   });
-    // }
-
     // replace the data of html where there is pattern of {{val}} with value of data only if type is xml and data[val] is not undefined also check for options like {{val.val}} and {{val.val.val}}. when data is in xml structure
     if (this.type === "xml") {
       this.innerHTML = this.html.replace(/{{([^}]+)}}/g, (match, p1) => {
